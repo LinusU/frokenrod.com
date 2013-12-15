@@ -1,0 +1,22 @@
+
+extends base
+
+block head
+  title Fröken Röds Galleri
+
+block content
+  article.feed
+    .item-gallery-index
+      a(href='/gallery/tall')
+        img(src='/img/card-tall.png')
+        |
+        | Höga kort, 35 kr
+        | 10 x 21 cm
+        | kuvert ingår
+      a(href='/gallery/small')
+        img(src='/img/card-small.png')
+        |
+        | Små kort, 25 kr
+        | 10 x 10 cm
+        | kuvert ingår
+

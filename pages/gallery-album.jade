@@ -1,0 +1,18 @@
+
+extends base
+
+block head
+  title Fröken Röds Galleri
+
+block content
+  article.feed
+    .item-gallery-album(class='album-' + album)
+      for img, i in imgs
+        if (i === 23 && album === 'tall')
+          figure.wide
+            img(src=img.url)
+            figcaption= img.title
+        else
+          figure
+            img(src=img.url)
+            figcaption= img.title

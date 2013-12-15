@@ -1,0 +1,13 @@
+
+extends base
+
+block head
+  title Kontakta Fröken Röd
+
+block content
+  article.feed
+    .item-text
+      if success
+        p Ditt meddelande har skickats.
+      else
+        p Ditt meddelande kunde tyvärr inte skickas just nu.

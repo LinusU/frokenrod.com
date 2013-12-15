@@ -1,0 +1,17 @@
+doctype 5
+html
+  head
+    block head
+    link(rel='stylesheet', type='text/css', href='/style')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Små kort,Måleri,Handmålade,Gratulationskort,Kort,Fröken Röd,Målning,Lena Emilsson,Handmålat,Höga kort')
+  body
+    main
+      header
+        nav
+          a(href='/') Hem
+          a(href='/gallery') Galleri
+          a(href='/contact') Kontakt
+      block content
+      footer
+        != '&copy; Fröken Röd Gratulationskort 2009 - ' + (new Date).getFullYear()

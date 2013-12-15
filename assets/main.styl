@@ -1,0 +1,147 @@
+
+@font-face
+  font-family 'Smythe'
+  font-style normal
+  font-weight 400
+  src local('Smythe'), url(http://themes.googleusercontent.com/static/fonts/smythe/v5/58P6wTD0mpp87RIZiQ6EAevvDin1pK8aKteLpeZ5c0A.woff) format('woff')
+
+html
+  overflow-y scroll
+
+html, body, figure, figcaption, figure img
+  padding 0
+  margin 0
+
+body
+  background #eee
+  font-family 'Smythe', sans-serif
+  font-size 12pt
+
+a
+  outline none
+  cursor pointer
+  text-decoration none
+
+a:hover
+  text-decoration underline
+
+a img
+  border none
+
+main
+  width 800px
+  display block
+  margin 0px auto
+  // background white
+  // box-shadow 0 0 2px black
+  // box-shadow 0 0 12px -2px black
+
+header
+  padding-top 250px
+  background-image url(img/header.png)
+  background-repeat none
+  background-position top center
+  box-shadow 0 0 2px black
+
+nav
+  overflow hidden
+  text-align center
+  text-transform lowercase
+  background white
+  a
+    width 200px
+    padding 12px 0
+    display inline-block
+    color black
+  a:hover
+    color #d22
+    text-decoration none
+
+footer
+  clear both
+  font-family 'Helvetica Neue', sans-serif
+  text-align center
+  font-size 10pt
+  padding 12px 0
+  color #999
+
+.feed
+  .item-img, .item-text, .item-gallery-index, .item-gallery-album
+    margin 64px auto
+    border 1px solid #bbb
+    border-radius 3px
+    background white
+    box-shadow 0 1px 16px rgba(0, 0, 0, 0.1)
+    width 612px
+  .item-text
+    margin-top 32px
+    h1, p
+      margin 12px
+    a
+      color #35719D
+  .item-img
+    img
+      width 100%
+      display block
+      border-radius 2px 2px 0 0
+      box-shadow inset 0 0 0 1px rgba(255,255,255,0.15)
+    figcaption
+      background #e6e6e6
+      overflow hidden
+      span
+        height 24px
+        display block
+        line-height 24px
+        margin 12px
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+      .profile
+        float left
+        background url('img/profile.jpg')
+        background-size 26px 26px
+        background-position center center
+        width 24px
+        height 24px
+        margin 11px
+        border 1px solid rgba(0, 0, 0, 0.15)
+        border-radius 2px
+      time
+        float right
+        color #999
+        margin 12px
+        line-height 24px
+
+.item-gallery-index
+  padding 48px 0 32px
+  a
+    width 300px
+    text-align center
+    color #333
+    white-space pre
+    display inline-block
+
+.item-gallery-album.album-tall figure
+  height 400px
+  img
+    max-height 320px
+
+.item-gallery-album.album-small figure
+  height 280px
+  img
+    max-height 220px
+
+.item-gallery-album
+  overflow hidden
+  padding 48px 0 24px
+  figure
+    float left
+    width 306px
+    text-align center
+    img
+      box-shadow 0 0 12px #999
+  figure.wide
+    width 612px
+    height 290px
+  figcaption
+    margin-top 6px

@@ -1,0 +1,29 @@
+
+extends base
+
+block head
+  title Kontakta Fröken Röd
+
+block content
+  article.feed
+    .item-text
+      p
+        | Kontakta mig via formuläret nedan eller via epost
+        | (<a href="mailto:info@frokenrod.com">info@frokenrod.com</a>)
+        | om du vill beställa kort eller om du har frågor.
+      form(action='/contact', method='post')
+        p(style='float: left;')
+          | Ditt namn:
+          br
+          input(type='text', name='name')
+        p(style='float: left;')
+          | Din epost:
+          br
+          input(type='text', name='mail')
+        p(style='clear: both;')
+          | Ditt meddelande:
+          br
+          textarea(name='body', rows='8', cols='40')
+        p
+          input(type='submit', value='Skicka meddelande')
+
