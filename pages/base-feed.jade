@@ -1,0 +1,18 @@
+
+extends base-layout
+
+block content
+  article.feed
+    block text
+    for e in feed
+      figure.item-img
+        img(src=e.image)
+        figcaption
+          .profile
+          time
+            - var i = new Date(e.timestamp)
+            - var y = i.getFullYear()
+            - var m = i.getMonth() + 1
+            - var d = i.getDate()
+            = y + '-' + (m>9?m:'0'+m) + '-' + (d>9?d:'0'+d)
+          span= (e.title || '')

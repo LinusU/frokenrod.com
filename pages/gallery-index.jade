@@ -1,21 +1,21 @@
 
-extends base
+extends base-layout
 
 block head
-  title Fröken Röds Galleri
+  title Fröken Röds Gratulationskort
 
 block content
   article.feed
     .item-gallery-index
-      a(href='/gallery/tall')
+      a(href='/card/tall')
         img(src='/img/card-tall.png')
-        |
+        = '\n'
         | Höga kort, 35 kr
         | 10 x 21 cm
         | kuvert ingår
-      a(href='/gallery/small')
+      a(href='/card/small')
         img(src='/img/card-small.png')
-        |
+        = '\n'
         | Små kort, 25 kr
         | 10 x 10 cm
         | kuvert ingår
