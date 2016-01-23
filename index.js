@@ -17,9 +17,10 @@ app.set('view engine', 'jade');
 app.use('/img', express.static(path.join(__dirname, 'assets')));
 app.use(express.urlencoded());
 
-app.get('/', instagram.endpoint('landing', /^(?!(Brick(a|or)|Grytunderlägg))/));
+app.get('/', instagram.endpoint('landing', /^(?!(Brick(a|or)|Grytunderlägg|Skärbräd(a|or)))/));
 app.get('/tray', instagram.endpoint('tray', /^Brick(a|or)/));
 app.get('/coaster', instagram.endpoint('coaster', /^Grytunderlägg/));
+app.get('/cutting-board', instagram.endpoint('cutting-board', /^Skärbräd(a|or)/));
 
 app.get('/card', gallery.index);
 app.get('/card/:album', gallery.album);
