@@ -10,7 +10,8 @@ Create the file `settings.json` and configure as follow:
   "instagram": {
     "user_id": " ... ",
     "client_id": " ... ",
-    "client_secret": " ... "
+    "client_secret": " ... ",
+    "access_token": " ... "
   },
   "gmail": {
     "user": " ... ",
