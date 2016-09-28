@@ -2,6 +2,7 @@
   "name": "frokenrod",
   "version": "0.2.0",
   "dependencies": {
+    "debug": "^2.2.0",
     "express": "~3.4.7",
     "jade": "~0.35.0",
     "nib": "~1.0.1",
