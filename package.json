@@ -2,7 +2,7 @@
   "name": "frokenrod",
   "version": "0.2.0",
   "dependencies": {
-    "express": "~3.4.7",
+    "express": "~4.17.1",
     "jade": "~0.35.0",
     "nib": "~1.0.1",
     "nodemailer": "~6.4.2",
